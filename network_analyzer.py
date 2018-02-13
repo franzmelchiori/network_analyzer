@@ -144,7 +144,7 @@ class NetManager:
 
 
 def get_mstsc_hostname(customer='test'):
-    nm = NetManager(customer, 'mstsc.exe')
+    nm = NetManager(customer)
     if nm.known_hostnames:
         first_known_hostname = nm.known_hostnames[0]
         return first_known_hostname
